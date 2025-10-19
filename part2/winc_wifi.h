@@ -63,6 +63,12 @@
 #define GOP_STATE_CHANGE    GIDOP(GID_WIFI, 44)
 #define GOP_DHCP_CONF       GIDOP(GID_WIFI, 50)
 #define GOP_CONN_REQ_NEW    GIDOP(GID_WIFI, 59)
+#define GOP_WPS_REQ         GIDOP(GID_WIFI, 73)  // WPS request (P2P)
+#define GOP_WPS_RESP        GIDOP(GID_WIFI, 74)  // WPS response (P2P)
+#define GOP_P2P_ENABLE      GIDOP(GID_WIFI, 85)  // Enable P2P mode
+#define GOP_P2P_DISABLE     GIDOP(GID_WIFI, 86)  // Disable P2P mode
+#define GOP_P2P_CONN_REQ    GIDOP(GID_WIFI, 87)  // P2P connection request
+#define GOP_P2P_CONN_RESP   GIDOP(GID_WIFI, 88)  // P2P connection response
 #define GOP_BIND            GIDOP(GID_IP,   65)
 #define GOP_LISTEN          GIDOP(GID_IP,   66)
 #define GOP_ACCEPT          GIDOP(GID_IP,   67)

@@ -9,6 +9,9 @@ set(CMAKE_CXX_STANDARD 17)
 # (note this can come from environment, CMake cache etc)
 set(PICO_SDK_PATH "C:/Users/jb/Documents/Pico/pico-sdk")
 
+# Set board type for Pico 2W (RP2350)
+set(PICO_BOARD pico2_w CACHE STRING "Board type")
+
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
 
@@ -19,7 +22,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(winc_wifi winc_pico_part2.c winc_wifi.c winc_sock.c)
+add_executable(winc_wifi winc_pico_part2.c winc_wifi.c winc_sock.c winc_p2p.c)
 
 pico_set_program_name(winc_wifi "winc_wifi")
 pico_set_program_version(winc_wifi "0.1")
